@@ -202,6 +202,7 @@ To prevent denial-of-service-style abuse, HTTP flood protection was configured. 
 - Useful in environments where repeated requests could strain the system or indicate malicious probing.
 
 **Screenshot:**
+![HTTP Flood Protection](screenshots/18.png)
 
 ![HTTP Flood Protection](screenshots/19.png)
 
