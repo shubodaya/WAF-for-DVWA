@@ -249,3 +249,33 @@ A simple test page was configured to simulate common web application vulnerabili
 ![Detection & Logging](screenshots/23.png)  
 ![Blocked Access](screenshots/24.png)
 
+---
+
+## ✅ Final Notes
+
+The project demonstrates how a Web Application Firewall (WAF) can be effectively configured to detect, block, and log common web-based attacks, such as HTTP floods and SQL injection attempts. Using DVWA (Damn Vulnerable Web Application) hosted internally, attacks were simulated from a Kali Linux machine, and corresponding WAF protections were tested and validated.
+
+Similar tests can be extended to other DVWA modules such as:
+
+- Cross-site scripting (XSS)
+- Command injection
+- File inclusion
+- CSRF
+
+The firewall can be further tuned to block these threats using deep packet inspection, signature-based detection, and rule-based access controls.
+
+---
+
+## 🚧 Future Work
+
+There are several ways to expand this project:
+
+- **Advanced WAF Configuration**: Integrate anomaly detection, rate-limiting by user-agent, or country-based IP restrictions.
+- **SIEM Integration**: Forward WAF logs to a SIEM tool like Splunk or Microsoft Sentinel for centralized monitoring and alerting.
+- **Automated Response**: Build scripts that automatically update firewall rules based on intrusion detection triggers.
+- **Zero Trust**: Explore how identity-aware proxies or Zero Trust principles can be implemented in addition to traditional WAF protection.
+- **Cloud-based WAFs**: Try replicating this setup using cloud-native tools like AWS WAF, Azure WAF, or Cloudflare.
+
+This project is a solid step toward understanding web attack surfaces and how security tools like WAFs play a critical role in defense-in-depth strategies.
+
+
