@@ -188,4 +188,63 @@ Finally, update the DVWA site configuration to use HTTPS:
 Now accessible at:
 https://webserver.socialdork/DVWA
 
+## 9. Security Features
+
+This section demonstrates a few key security measures implemented to protect the internal systems and services of the fictional Artisanal Widget Co. Below are the features configured and tested.
+
+---
+
+### 🔒 HTTP Flood Protection
+
+To prevent denial-of-service-style abuse, HTTP flood protection was configured. When more than **3 requests are received within 10 seconds** from the same client, the IP is temporarily **blocked for 5 minutes**.
+
+- This simulates basic DoS/DDoS prevention.
+- Useful in environments where repeated requests could strain the system or indicate malicious probing.
+
+**Screenshot:**
+
+![HTTP Flood Protection](screenshots/19.png)
+
+---
+
+### 🔐 Web Page Access via Authentication (for Kali Machine IP)
+
+Access to internal web pages was restricted using an authentication mechanism. Only authenticated users can interact with the system.
+
+- Access attempt was made from a Kali Linux machine.
+- A login prompt ensures only authorized users can proceed.
+
+**Screenshots:**
+
+![Auth Prompt](screenshots/20.1.png)  
+![Successful Authentication](screenshots/20.png)
+
+---
+
+### 🚫 Blocking Unauthorized Access (Kali Machine IP)
+
+To simulate handling of a suspicious machine (in this case, a Kali Linux system used for testing), an access rule was created to **explicitly block its IP address** from reaching the web server.
+
+- Demonstrates network-based access control.
+- Useful for blacklisting known hostile endpoints.
+
+**Screenshots:**
+
+![Access Rule Configuration](screenshots/21.png)  
+![Access Denied](screenshots/22.1.png)
+
+---
+
+### 🛡️ Web Application Attack Protection (e.g., SQL Injection)
+
+A simple test page was configured to simulate common web application vulnerabilities. Security controls were applied to mitigate attacks like SQL injection.
+
+- Demonstrates input validation and error handling.
+- A common attack string was blocked and logged.
+
+**Screenshots:**
+
+![SQL Injection Attempt](screenshots/22.png)  
+![Detection & Logging](screenshots/23.png)  
+![Blocked Access](screenshots/24.png)
 
