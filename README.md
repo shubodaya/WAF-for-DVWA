@@ -265,6 +265,14 @@ Similar tests can be extended to other DVWA modules such as:
 The firewall can be further tuned to block these threats using deep packet inspection, signature-based detection, and rule-based access controls.
 
 ---
+## 🎥 Video Guide
+For a step-by-step visual walkthrough, check out the original tutorial that inspired this project:
+
+[![Video thumbnail](https://img.youtube.com/vi/N0dEC1nuWCQ/0.jpg)](https://youtu.be/N0dEC1nuWCQ)  
+[Building a Web Application Firewall Home Lab - Royden Rahul Rebello](https://youtu.be/N0dEC1nuWCQ)
+
+
+---
 
 ## 🚧 Future Work
 
