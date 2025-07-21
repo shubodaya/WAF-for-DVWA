@@ -114,7 +114,7 @@ sudo nano /etc/hosts
 ```
 ## 🖥️ 6. DVWA Installation & Configuration
 
-Refer to the complete installation guide in [WAF-Lab-Guide.pdf](WAF.pdf) for detailed steps. Key configuration points:
+Refer to the complete installation guide in [WAF.pdf](WAF.pdf) for detailed steps. Key configuration points:
 
 ### Apache Verification
 ![Apache configuration showing DVWA on port 8080](screenshots/8.png)  
